@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext");
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 25px;
+  color: #5d5d5d;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px; }
+
+header {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+
+aside {
+  padding: 50px;
+  -webkit-flex-basis: 40%;
+  flex-basis: 40%;
+  background-color: #eaeaea; }
+
+main {
+  padding: 50px;
+  -webkit-flex-basis: 60%;
+  flex-basis: 60%;
+  background-color: #eaeaea; }
+  main > section {
+    margin: 100px 0; }
+
+ul {
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: .5em 0 .5em 0;
+  line-height: 1.5em; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover, a:active, a:visited {
+    color: inherit; }
+
+button {
+  border: none;
+  outline: none;
+  background: none; }
+
+.btn {
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: max-content;
+  margin-right: 5px;
+  padding: 8px 20px;
+  font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  border-radius: 2px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s; }
+  .btn:hover {
+    cursor: pointer; }
+  .btn.btn-primary {
+    color: #fff;
+    background-color: #13bd77; }
+    .btn.btn-primary:hover, .btn.btn-primary:active {
+      background-color: #13a05d; }
+  .btn.btn-default {
+    color: #fff;
+    background-color: #2C5157; }
+    .btn.btn-default:hover, .btn.btn-default:active {
+      background-color: #477e85; }
+  .btn.btn-danger {
+    color: #fff;
+    background-color: #C54745; }
+    .btn.btn-danger:hover, .btn.btn-danger:active {
+      background-color: #983836; }
+  .btn.btn-light {
+    padding: 5px 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    font-size: .8em;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s; }
+    .btn.btn-light.selected {
+      background-color: #13bd77;
+      color: #fff; }
+    .btn.btn-light:hover {
+      cursor: pointer; }
+    .btn.btn-light.disabled {
+      color: #ccc;
+      pointer-events: none;
+      cursor: none; }
+    .btn.btn-light.active {
+      background-color: #C54745; }
+  .btn.xs {
+    padding: 3px 7px;
+    font-size: .75em; }
+  .btn.sm {
+    padding: 5px 10px;
+    font-size: .85em; }
+  .btn.md {
+    padding: 8px 20px; }
+  .btn.lg {
+    padding: 11px 25px; }
+
+.img-fit {
+  object-fit: cover;
+  height: 100%; }
+
+.section-header {
+  border-top: 7px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 30%;
+  padding: 15px 0 0 15px; }
+
+.nav-primary {
+  margin-bottom: 25px; }
+  .nav-primary .nav-item {
+    display: inline-block; }
+    .nav-primary .nav-item:hover, .nav-primary .nav-item:active {
+      cursor: pointer; }
+      .nav-primary .nav-item:hover .nav-link, .nav-primary .nav-item:active .nav-link {
+        color: #13bd77; }
+  .nav-primary .nav-link {
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+    padding: 0 15px; }
+    .nav-primary .nav-link.active {
+      color: #13bd77; }
+
+.content {
+  background-color: #fff;
+  padding: 25px; }
+
+#skills section {
+  margin: 25px 15px; }
+#skills .skill {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 5px 0; }
+  #skills .skill .skill-name {
+    -webkit-flex-basis: 40%;
+    flex-basis: 40%; }
+  #skills .skill .progress-bar {
+    position: relative;
+    -webkit-flex-basis: 60%;
+    flex-basis: 60%;
+    height: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff; }
+    #skills .skill .progress-bar .progress-bar-filler {
+      background-color: #000;
+      width: 80%; }
+    #skills .skill .progress-bar .progress-bar-label {
+      position: absolute;
+      display: -moz-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      left: 80%;
+      padding: 3px 8px;
+      font-size: .8em;
+      background-color: #fff;
+      color: #000; }
+
+#personal-info {
+  text-align: center; }
+  #personal-info .image-container {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden; }
+
+#experience .education,
+#experience .experience,
+#education .education,
+#education .experience {
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa; }
+  #experience .education:last-of-type,
+  #experience .experience:last-of-type,
+  #education .education:last-of-type,
+  #education .experience:last-of-type {
+    border-bottom: none; }
+#experience .period,
+#education .period {
+  color: #ccc;
+  font-size: .8em; }
+#experience .company,
+#experience .institution,
+#education .company,
+#education .institution {
+  font-size: 1.4em;
+  margin: 0;
+  line-height: 1em; }
+
+/*# sourceMappingURL=main.css.map */
