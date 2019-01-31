@@ -4,6 +4,7 @@
 // Variables (mixins, colors)
 @import "./mixins.scss";
 @import "./colors.scss";
+@import "./animations.scss";
 
 * {
   box-sizing: border-box;
@@ -219,13 +220,13 @@ button {
 
 .content {
   background-color: $white;
-  padding: 25px;
+  padding: 40px;
 }
 
 #skills {
 
   section {
-    margin: 25px 15px;
+    margin: 25px 0;
   }
 
   .skill {
@@ -247,7 +248,27 @@ button {
 
       .progress-bar-filler {
         background-color: $black;
-        width: 80%;
+
+
+        &#js {
+          @include draw-progress(80%, .3s);
+        }
+
+        &#react {
+          @include draw-progress(60%, .6s);
+        }
+
+        &#html {
+          @include draw-progress(70%, .9s);
+        }
+
+        &#css {
+          @include draw-progress(20%, 1.2s);
+        }
+
+        &#bootstrap {
+          @include draw-progress(75%, 1.5s);
+        }
       }
 
       .progress-bar-label {
@@ -284,6 +305,7 @@ button {
 }
 
 #about {
+
 }
 
 #experience,

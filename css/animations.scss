@@ -1,0 +1,17 @@
+@keyframes draw {
+  0% {
+    width: 0;
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@mixin draw-progress($value: 0, $delay: .3) {
+  animation: draw 1s ease-in-out;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  width: $value;
+  visibility: hidden;
+}
