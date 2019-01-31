@@ -3,10 +3,7 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @keyframes draw {
   0% {
-    width: 0;
-    visibility: hidden; }
-  100% {
-    visibility: visible; } }
+    width: 0; } }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -191,76 +188,90 @@ button {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s;
   padding: 5px 0; }
+  #skills .skill:hover {
+    cursor: pointer;
+    color: #000;
+    font-weight: 600; }
+    #skills .skill:hover .progress-bar .progress-bar-filler {
+      opacity: 0; }
+    #skills .skill:hover .progress-bar .progress-bar-label {
+      opacity: 1;
+      width: 100%; }
+    #skills .skill:hover .skill-name {
+      transform: translateX(70%); }
   #skills .skill .skill-name {
     -webkit-flex-basis: 40%;
-    flex-basis: 40%; }
+    flex-basis: 40%;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s; }
   #skills .skill .progress-bar {
-    position: relative;
     -webkit-flex-basis: 60%;
     flex-basis: 60%;
-    height: 5px;
+    height: 3px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background-color: #fff; }
+    position: relative;
+    background-color: #eaeaea; }
     #skills .skill .progress-bar .progress-bar-filler {
       background-color: #000; }
       #skills .skill .progress-bar .progress-bar-filler#js {
         animation: draw 1s ease-in-out;
-        animation-delay: 0.3s;
-        animation-fill-mode: forwards;
-        width: 80%;
-        visibility: hidden; }
+        animation-delay: 0.3;
+        width: 60%; }
       #skills .skill .progress-bar .progress-bar-filler#react {
         animation: draw 1s ease-in-out;
-        animation-delay: 0.6s;
-        animation-fill-mode: forwards;
-        width: 60%;
-        visibility: hidden; }
+        animation-delay: 0.3;
+        width: 70%; }
+      #skills .skill .progress-bar .progress-bar-filler#angular {
+        animation: draw 1s ease-in-out;
+        animation-delay: 0.3;
+        width: 25%; }
       #skills .skill .progress-bar .progress-bar-filler#html {
         animation: draw 1s ease-in-out;
-        animation-delay: 0.9s;
-        animation-fill-mode: forwards;
-        width: 70%;
-        visibility: hidden; }
+        animation-delay: 0.3;
+        width: 80%; }
       #skills .skill .progress-bar .progress-bar-filler#css {
         animation: draw 1s ease-in-out;
-        animation-delay: 1.2s;
-        animation-fill-mode: forwards;
-        width: 20%;
-        visibility: hidden; }
+        animation-delay: 0.3;
+        width: 70%; }
       #skills .skill .progress-bar .progress-bar-filler#bootstrap {
         animation: draw 1s ease-in-out;
-        animation-delay: 1.5s;
-        animation-fill-mode: forwards;
-        width: 75%;
-        visibility: hidden; }
+        animation-delay: 0.3;
+        width: 50%; }
+      #skills .skill .progress-bar .progress-bar-filler#photoshop {
+        animation: draw 1s ease-in-out;
+        animation-delay: 0.3;
+        width: 90%; }
+      #skills .skill .progress-bar .progress-bar-filler#illustrator {
+        animation: draw 1s ease-in-out;
+        animation-delay: 0.3;
+        width: 80%; }
+      #skills .skill .progress-bar .progress-bar-filler#in-design {
+        animation: draw 1s ease-in-out;
+        animation-delay: 0.3;
+        width: 85%; }
     #skills .skill .progress-bar .progress-bar-label {
-      position: absolute;
-      display: -moz-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-align: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -moz-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      left: 80%;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      transition: .4s;
+      position: absolute;
+      right: 0;
       padding: 3px 8px;
       font-size: .8em;
-      background-color: #fff;
-      color: #000; }
+      background-color: #000;
+      color: #fff;
+      opacity: 0;
+      width: 0; }
 
 #personal-info {
   text-align: center; }

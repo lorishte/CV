@@ -232,56 +232,101 @@ button {
   .skill {
     @include flex;
     @include align-items(center);
+    @include main-transition;
 
     padding: 5px 0;
 
-    .skill-name {
-      @include flex-basis(40%);
-    }
+    &:hover {
+      cursor: pointer;
+      color: $black;
+      font-weight: 600;
 
-    .progress-bar {
-      position: relative;
-      @include flex-basis(60%);
-      height: 5px;
-      @include flex;
-      background-color: $white;
+      .progress-bar {
 
-      .progress-bar-filler {
-        background-color: $black;
-
-
-        &#js {
-          @include draw-progress(80%, .3s);
+        .progress-bar-filler {
+          opacity: 0;
         }
 
-        &#react {
-          @include draw-progress(60%, .6s);
-        }
-
-        &#html {
-          @include draw-progress(70%, .9s);
-        }
-
-        &#css {
-          @include draw-progress(20%, 1.2s);
-        }
-
-        &#bootstrap {
-          @include draw-progress(75%, 1.5s);
+        .progress-bar-label {
+          opacity: 1;
+          width: 100%;
         }
       }
 
+      .skill-name {
+        transform: translateX(70%);
+      }
+    }
+
+    .skill-name {
+      @include flex-basis(40%);
+      @include main-transition;
+    }
+
+    .progress-bar {
+      @include flex-basis(60%);
+      height: 3px;
+      @include flex;
+      position: relative;
+
+      background-color: $medium-grey;
+
+      .progress-bar-filler {
+
+        background-color: $black;
+
+        &#js {
+          @include draw-progress(60%);
+        }
+
+        &#react {
+          @include draw-progress(70%);
+        }
+
+        &#angular {
+          @include draw-progress(25%);
+        }
+
+        &#html {
+          @include draw-progress(80%);
+        }
+
+        &#css {
+          @include draw-progress(70%);
+        }
+
+        &#bootstrap {
+          @include draw-progress(50%);
+        }
+
+        &#photoshop {
+          @include draw-progress(90%);
+        }
+
+        &#illustrator {
+          @include draw-progress(80%);
+        }
+
+        &#in-design {
+          @include draw-progress(85%);
+        }
+
+      }
+
       .progress-bar-label {
-        position: absolute;
-        @include inline-flex;
-        @include align-items(center);
-        @include justify-content(center);
         @include align-self(center);
-        left: 80%;
+        @include main-transition;
+
+        position: absolute;
+        right: 0;
+
         padding: 3px 8px;
         font-size: .8em;
-        background-color: $white;
-        color: $black;
+        background-color: $black;
+        color: $white;
+
+        opacity: 0;
+        width: 0;
       }
     }
   }
