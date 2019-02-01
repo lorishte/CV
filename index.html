@@ -14,7 +14,7 @@
         <ul class="nav-primary">
 
             <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#main" class="nav-link active">
                     Home
                 </a>
             </li>
@@ -26,7 +26,7 @@
             </li>
 
             <li class="nav-item">
-                <a  href="#about" class="nav-link">
+                <a href="#about" class="nav-link">
                     About
                 </a>
             </li>
@@ -43,40 +43,30 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+            </li>
+
 
         </ul>
     </nav>
 </header>
 
-<aside id="personal-info">
-    <div class="image-container">
-        <img src="images/lora.jpg"/>
-    </div>
 
-    <div class="personal-info-text">
-        <p> +359 887 718 788 </p>
-        <p>lora.milcheva@outlook.com</p>
-        <h3>Web Projects</h3>
-        <ul>
-            <li>
-                <a href="http://podredeni.eu" target="_blank">Podredeni.eu - E-commerce Application</a>
-            </li>
-            <li>
-                <a href="http://polymerconcept.bg/" target="_blank">Polymer Concept - Web Page</a>
-            </li>
-        </ul>
+<main id="main">
 
-        <h3>Graphic Design Projects</h3>
-        <ul>
-            <li>
-                <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank">Graphic Design Portfolio</a>
+    <aside id="personal-info">
+        <div class="image-container">
+            <img src="images/lora.jpg"/>
+        </div>
 
-            </li>
-        </ul>
-    </div>
-</aside>
-
-<main>
+        <div>
+            <p> +359 887 718 788 </p>
+            <p>lora.milcheva@outlook.com</p>
+        </div>
+    </aside>
 
     <section id="skills">
         <h2 class="section-header">Skills</h2>
@@ -86,9 +76,9 @@
             <section id="front-end-skills">
                 <h3>Web Development</h3>
                 <div class="skill">
-                    <span class="skill-name">
-                        <p>JavaScript</p>
-                    </span>
+
+                    <span class="skill-name">JavaScript</span>
+
                     <div class="progress-bar">
                         <span id="js" class="progress-bar-filler"></span>
                         <span class="progress-bar-label">good</span>
@@ -172,12 +162,16 @@
         <h2 class="section-header">About</h2>
 
         <div class="content">
+            <p> Hello,
+            <p/>
+            <p> My name is Lora and I‘m a graphic designer.
+            <p/>
             <p>
-                Hello,
-                My name is Lora and I‘m a graphic designer.
                 So far I‘ve been able to work on various projects, creating brands, visuals, prints and many more. I‘ve
                 had the opportunity to work for world-wide companies like Fujitsu, adhering strict visual standards,
                 while at the same time I enjoyed projects where I had freedom to create and experiment.
+            <p/>
+            <p>
                 Willing to expand my horizon, last year I enrolled the SoftUni program for JavaScript developers, since
                 web was something I always considered an immense field for design and creation. To my surprise, coding
                 turned out not only to be a lot of fun, but also quite interesting and provocative. I dedicated all my
@@ -185,7 +179,8 @@
                 to learning new technologies and frameworks.
                 Although I‘m still a beginner, I‘m pretty sure this is something I want to explore deeper. I found a
                 great tool to experiment with and a huge challenge to become better at.
-                I‘m really interested in creating impressive, yet simple and clean design, combining good structure,
+            <p/>
+            <p>I‘m really interested in creating impressive, yet simple and clean design, combining good structure,
                 consistency and usability.
             </p>
         </div>
@@ -237,6 +232,69 @@
                 <p class="period">October 2004 - April 2008 </p>
                 <p class="company">Cores Business Centres</p>
                 <p class="position">Graphic Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-header">Projects</h2>
+
+        <div class="content">
+
+            <div class="web-projects">
+                <h3>Web Projects</h3>
+
+                <article class="project-card">
+                    <p class="project-name">Podredeni.eu
+                        <a href="http://podredeni.eu" target="_blank"></a>
+                        <span class="project-type"> E-commerce Application </span>
+                    </p>
+
+                    <p class="project-technologies">ReactJS, React-Bootstrap, HTML, CSS</p>
+
+                    <p class="project-info"> The front-end part of this project was build with React. <br/>
+                        Administrator has full control over products, news, promotions, videos, partners and home page content. He can also edit received orders and change their status. <br/>
+                        All products can be added to promotions, which are set to be of two types - discount and product promotions. Discount promos give price discount while product promos can be of type "buy 2, get 3" or they can benefit the customer with a present (another product, selected from a list). They are validated via promo code.<br/>
+                        The site is fully responsive.
+                    </p>
+                    <a href="http://podredeni.eu" target="_blank" class="btn btn-primary xs">View
+                        <span class="btn-icon">
+                            <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
+                        </span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-name">Polymer Concept
+                        <span class="project-type"> Web Page </span>
+                    </p>
+                    <p class="project-technologies">JavaScript, jQuery, HTML, CSS</p>
+                    <p class="project-info">Logo, web page design and implementation. The site is fully responsive.
+                    </p>
+
+                    <a href="http://polymerconcept.bg/" target="_blank" class="btn btn-primary xs">View
+                        <span class="btn-icon">
+                            <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
+                        </span>
+                    </a>
+                </article>
+            </div>
+
+            <div class="design-projects">
+                <h3>Graphic Design Projects</h3>
+
+                <article class="project-card">
+                    <p class="project-name">Graphic Design Portfolio </p>
+                    <p class="project-technologies">Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+                    <p class="project-info">A small collection of graphic design projects.
+                    </p>
+                    <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank" class="btn btn-primary xs">View
+                        <span class="btn-icon">
+                            <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
+                        </span>
+                    </a>
+                </article>
+
             </div>
         </div>
     </section>
