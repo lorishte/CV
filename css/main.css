@@ -17,9 +17,25 @@ body {
 
 header {
   position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  height: 45px;
   top: 0;
   width: 100%;
   background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
   z-index: 100; }
 
 main {
@@ -36,8 +52,7 @@ main {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   margin: auto;
-  padding: 50px;
-  background-color: #eaeaea; }
+  padding: 50px; }
   main > section {
     margin-top: 80px;
     -webkit-flex-basis: 60%;
@@ -97,7 +112,7 @@ button {
     cursor: pointer; }
   .btn.btn-primary {
     color: #fff;
-    background-color: #000; }
+    background-color: #2bb9b9; }
     .btn.btn-primary:hover, .btn.btn-primary:active {
       background-color: #13a05d; }
   .btn.btn-default {
@@ -119,7 +134,7 @@ button {
     -moz-transition: .4s;
     transition: .4s; }
     .btn.btn-light.selected {
-      background-color: #000;
+      background-color: #2bb9b9;
       color: #fff; }
     .btn.btn-light:hover {
       cursor: pointer; }
@@ -156,15 +171,14 @@ button {
   width: 100%; }
 
 .section-header {
-  color: #fff;
+  color: #2bb9b9;
   text-transform: uppercase;
   font-size: 6em;
   font-weight: 200;
-  width: 30%;
   margin-top: 30px; }
 
 .nav-primary {
-  height: 45px;
+  height: 30px;
   padding-right: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,15 +193,14 @@ button {
   -moz-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  border-bottom: 1px solid #eaeaea; }
+  justify-content: flex-end; }
   .nav-primary .nav-item {
     height: inherit; }
     .nav-primary .nav-item:hover, .nav-primary .nav-item:active {
       cursor: pointer; }
       .nav-primary .nav-item:hover .nav-link, .nav-primary .nav-item:active .nav-link {
         color: #fff;
-        background-color: #eaeaea; }
+        background-color: #2bb9b9; }
   .nav-primary .nav-link {
     display: -moz-inline-box;
     display: -webkit-inline-flex;
@@ -207,7 +220,7 @@ button {
     font-size: .7em; }
     .nav-primary .nav-link.active {
       color: #fff;
-      background-color: #eaeaea; }
+      background-color: #2bb9b9; }
 
 .content {
   background-color: #fff;
@@ -369,7 +382,7 @@ button {
     margin-left: 10px;
     top: -2px; }
   #projects .project-card .project-technologies {
-    color: #000;
+    color: #2bb9b9;
     font-size: .85em;
     margin-bottom: 15px; }
   #projects .project-card .project-info {
