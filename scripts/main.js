@@ -1,10 +1,33 @@
 let menuLinks = $('.nav-link');
 let headerHeight = $('header').height();
 
+let progressBars = $('.progress-bar');
+let scaleInWords = {
+	0: 'zero',
+	10: 'ten',
+	20: 'twenty',
+	30: 'thirty',
+	40: 'forty',
+	50: 'fifty',
+	60: 'sixty',
+	70: 'seventy',
+	80: 'eighty',
+	90: 'ninety',
+	100: 'hundred'
+}
+
 // Make menu active
 menuLinks.click(function () {
 	menuLinks.removeClass('active');
 	$(this).addClass('active');
+});
+
+progressBars.each(function () {
+	let el = $(this);
+
+	for (let i = 0; i <= 10; i++) {
+		el.append(`<span class="scale-label graph-${i}">${i * 10}%</span>`)
+	}
 });
 
 //smooth scroll

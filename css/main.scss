@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext');
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
 // Variables (mixins, colors)
 @import "./mixins.scss";
 @import "./colors.scss";
 @import "./animations.scss";
+
+
 
 * {
   box-sizing: border-box;
@@ -276,7 +280,7 @@ button {
     @include align-items(center);
     //@include main-transition;
 
-    padding: 8px 0;
+    padding: 13px 0;
 
     &:hover {
       cursor: pointer;
@@ -285,14 +289,15 @@ button {
 
       .progress-bar {
 
-        .progress-bar-filler {
-          opacity: 0;
+        .scale-label {
+          opacity: 1;
+          transform: translateY(0);
         }
 
-        .progress-bar-label {
-          opacity: 1;
-          width: 100%;
+        .progress-bar-filler {
+          background-color: $primary;
         }
+
       }
 
       .skill-name {
@@ -301,58 +306,37 @@ button {
     }
 
     .skill-name {
-      @include flex-basis(40%);
+      @include flex-basis(25%);
       @include main-transition;
     }
 
     .progress-bar {
-      @include flex-basis(60%);
-      height: 3px;
+      @include flex-basis(75%);
+      height: 2px;
       @include flex;
       position: relative;
 
-      //background-color: $medium-grey;
+      background-color: $medium-grey;
+
+
+      .scale-label {
+        position: absolute;
+        border-left: 1px solid $medium-grey;
+        padding: 0 0 2px 4px;
+        font-size: .65em;
+        color: $medium-to-dark-grey;
+        top: 9px;
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+        @include main-transition;
+      }
+
 
       .progress-bar-filler {
-
-        background-color: $black;
-
-        &#js {
-          @include draw-progress(60%);
-        }
-
-        &#react {
-          @include draw-progress(70%);
-        }
-
-        &#angular {
-          @include draw-progress(25%);
-        }
-
-        &#html {
-          @include draw-progress(80%);
-        }
-
-        &#css {
-          @include draw-progress(70%);
-        }
-
-        &#bootstrap {
-          @include draw-progress(50%);
-        }
-
-        &#photoshop {
-          @include draw-progress(90%);
-        }
-
-        &#illustrator {
-          @include draw-progress(80%);
-        }
-
-        &#in-design {
-          @include draw-progress(85%);
-        }
-
+        background-color: $primary;
       }
 
       .progress-bar-label {
@@ -360,15 +344,17 @@ button {
         @include main-transition;
 
         position: absolute;
-        right: 0;
+        left: 0;
 
-        padding: 3px 8px;
+        padding: 1px 0;
         font-size: .8em;
-        background-color: $black;
-        color: $white;
+        background-color: $primary;
+        color: transparent;
 
         opacity: 0;
         width: 0;
+
+        white-space: nowrap;
       }
     }
   }

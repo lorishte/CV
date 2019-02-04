@@ -4,9 +4,20 @@
   }
 }
 
+@keyframes shrink {
+  100% {
+    width: 0;
+  }
+}
 
-@mixin draw-progress($value: 0, $delay: .3) {
+
+@mixin draw-progress($value: 0, $delay: 0s) {
   animation: draw 1s ease-in-out;
   animation-delay: $delay;
   width: $value;
+}
+
+@mixin shrink($value: 0) {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
