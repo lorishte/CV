@@ -1,0 +1,193 @@
+@keyframes draw {
+  0% {
+    width: 0; } }
+@keyframes shrink {
+  100% {
+    width: 0; } }
+.graph-0 {
+  left: 0%; }
+
+.graph-1 {
+  left: 10%; }
+
+.graph-2 {
+  left: 20%; }
+
+.graph-3 {
+  left: 30%; }
+
+.graph-4 {
+  left: 40%; }
+
+.graph-5 {
+  left: 50%; }
+
+.graph-6 {
+  left: 60%; }
+
+.graph-7 {
+  left: 70%; }
+
+.graph-8 {
+  left: 80%; }
+
+.graph-9 {
+  left: 90%; }
+
+.graph-10 {
+  left: 100%; }
+
+#js {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 60%; }
+
+#react {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 58%; }
+
+#angular {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 35%; }
+
+#html {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 76%; }
+
+#css {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 85%; }
+
+#bootstrap {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 53%; }
+
+#photoshop {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 88%; }
+
+#illustrator {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 73%; }
+
+#in-design {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 86%; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.js {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 60%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.react {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 58%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.angular {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 35%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.html {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 76%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.css {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 85%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.bootstrap {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 53%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.photoshop {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 88%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.illustrator {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 73%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-label.in-design {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 86%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#js {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#react {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#angular {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#html {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#css {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#bootstrap {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#photoshop {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#illustrator {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+#skills .skill:hover .progress-bar .progress-bar-filler#in-design {
+  animation: shrink 1s ease-in-out;
+  animation-fill-mode: forwards; }
+
+/*# sourceMappingURL=test.css.map */
