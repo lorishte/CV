@@ -17,15 +17,16 @@ $skills-list: js '60', react '58', angular '35', html '76', css '85', bootstrap 
   ##{nth((nth($skills-list, $i)), 1)}
     @include draw-progress(#{nth((nth($skills-list, $i)), 2)}#{$percent})
 
-// Skills - progress-bar animation on skill hover
+// Skills - progress-bar label animation on skill hover
 @for $i from 1 through length($skills-list)
-  #skills .skill:hover .progress-bar .progress-bar-label.#{nth((nth($skills-list, $i)), 1)}
+  #info #skills .skill:hover .progress-bar .progress-bar-label.#{nth((nth($skills-list, $i)), 1)}
     @include draw-progress(#{nth((nth($skills-list, $i)), 2)}#{$percent})
     opacity: 1
     color: $white
     padding: 1px 8px
 
-// Skills animation - shrink on skill hover
+// Skills progress-bar shrink on skill hover
 @for $i from 1 through length($skills-list)
-  #skills .skill:hover .progress-bar .progress-bar-filler##{nth((nth($skills-list, $i)), 1)}
-    @include shrink(#{nth((nth($skills-list, $i)), 2)}#{$percent})
+  #info #skills .skill:hover .progress-bar .progress-bar-filler##{nth((nth($skills-list, $i)), 1)}
+    //@include shrink(#{nth((nth($skills-list, $i)), 2)}#{$percent})
+    opacity: 0

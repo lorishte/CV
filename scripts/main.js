@@ -14,7 +14,7 @@ let scaleInWords = {
 	80: 'eighty',
 	90: 'ninety',
 	100: 'hundred'
-}
+};
 
 // Make menu active
 menuLinks.click(function () {
@@ -42,14 +42,13 @@ $('a[href*="#"]')
 		let target = $(this).attr('href'); //Get the target
 		let scrollToPosition = $(target).offset().top - headerHeight;
 
-		$('html, body').animate({
+		$('html, body')
+			.animate({
 			'scrollTop': scrollToPosition
-		}, 1000, 'swing', function () {
-			window.location.hash = target;
-			$('html').animate({'scrollTop': scrollToPosition + 1}, 0);
+		}, 1000);
 
 			$(document).on('scroll', changeMenuOnScroll);
-		});
+
 	});
 
 $(document).on('scroll', changeMenuOnScroll);

@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#2bb9b9"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Graphic and web design">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+
+    <!-- Browser Polyfill -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+
     <title>Lora Milcheva</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -54,7 +63,7 @@
 
     <aside id="personal-info">
         <div class="image-container">
-            <img src="images/lora.jpg"/>
+            <img src="images/lora.jpg" alt="lora's picture"/>
         </div>
 
         <div>
@@ -63,240 +72,243 @@
         </div>
     </aside>
 
-    <section id="skills">
-        <h2 class="section-header">Skills</h2>
+    <div id="info">
+        <section id="skills">
+            <h2 class="section-header">Skills</h2>
 
-        <div class="content">
+            <div class="content">
 
-            <section id="front-end-skills">
-                <h3>Web Development</h3>
-                <div class="skill">
+                <section id="front-end-skills">
+                    <h3>Web Development</h3>
+                    <div class="skill">
 
-                    <span class="skill-name">JavaScript</span>
+                        <span class="skill-name">JavaScript</span>
 
-                    <div class="progress-bar">
-                        <span id="js" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label js">good</span>
+                        <div class="progress-bar">
+                            <span id="js" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label js">good</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">React JS</span>
-                    <div class="progress-bar">
-                        <span id="react" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label react">good</span>
+                    <div class="skill">
+                        <span class="skill-name">React JS</span>
+                        <div class="progress-bar">
+                            <span id="react" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label react">good</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">Angular 4</span>
-                    <div class="progress-bar">
-                        <span id="angular" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label angular">basic</span>
+                    <div class="skill">
+                        <span class="skill-name">Angular 4</span>
+                        <div class="progress-bar">
+                            <span id="angular" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label angular">basic</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">HTML 5</span>
-                    <div class="progress-bar">
-                        <span id="html" class="progress-bar-filler"> </span>
-                        <span class="progress-bar-label html">good</span>
+                    <div class="skill">
+                        <span class="skill-name">HTML 5</span>
+                        <div class="progress-bar">
+                            <span id="html" class="progress-bar-filler"> </span>
+                            <span class="progress-bar-label html">good</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">CSS 3</span>
-                    <div class="progress-bar">
-                        <span id="css" class="progress-bar-filler"> </span>
-                        <span class="progress-bar-label css">good</span>
+                    <div class="skill">
+                        <span class="skill-name">CSS 3</span>
+                        <div class="progress-bar">
+                            <span id="css" class="progress-bar-filler"> </span>
+                            <span class="progress-bar-label css">good</span>
 
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">Bootstrap 4</span>
-                    <div class="progress-bar">
-                        <span id="bootstrap" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label bootstrap">good</span>
+                    <div class="skill">
+                        <span class="skill-name">Bootstrap 4</span>
+                        <div class="progress-bar">
+                            <span id="bootstrap" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label bootstrap">good</span>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="graphic-design-skills">
-                <h3>Graphic Design</h3>
-                <div class="skill">
-                    <span class="skill-name">Adobe Protoshop</span>
-                    <div class="progress-bar">
-                        <span id="photoshop" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label photoshop">excellent</span>
+                <section id="graphic-design-skills">
+                    <h3>Graphic Design</h3>
+                    <div class="skill">
+                        <span class="skill-name">Adobe Protoshop</span>
+                        <div class="progress-bar">
+                            <span id="photoshop" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label photoshop">excellent</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">Adobe Illustrator</span>
-                    <div class="progress-bar">
-                        <span id="illustrator" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label illustrator">very good</span>
+                    <div class="skill">
+                        <span class="skill-name">Adobe Illustrator</span>
+                        <div class="progress-bar">
+                            <span id="illustrator" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label illustrator">very good</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill">
-                    <span class="skill-name">Adobe InDesign</span>
-                    <div class="progress-bar">
-                        <span id="in-design" class="progress-bar-filler"></span>
-                        <span class="progress-bar-label in-design">excellent</span>
+                    <div class="skill">
+                        <span class="skill-name">Adobe InDesign</span>
+                        <div class="progress-bar">
+                            <span id="in-design" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label in-design">excellent</span>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
 
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="section-header">About</h2>
-
-        <div class="content">
-            <p> Hello,
-            <p/>
-            <p> My name is Lora and I‘m a graphic designer.
-            <p/>
-            <p>
-                So far I‘ve been able to work on various projects, creating brands, visuals, prints and many more. I‘ve
-                had the opportunity to work for world-wide companies like Fujitsu, adhering strict visual standards,
-                while at the same time I enjoyed projects where I had freedom to create and experiment.
-            <p/>
-            <p>
-                Willing to expand my horizon, last year I enrolled the SoftUni program for JavaScript developers, since
-                web was something I always considered an immense field for design and creation. To my surprise, coding
-                turned out not only to be a lot of fun, but also quite interesting and provocative. I dedicated all my
-                time
-                to learning new technologies and frameworks.
-                Although I‘m still a beginner, I‘m pretty sure this is something I want to explore deeper. I found a
-                great tool to experiment with and a huge challenge to become better at.
-            <p/>
-            <p>I‘m really interested in creating impressive, yet simple and clean design, combining good structure,
-                consistency and usability.
-            </p>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2 class="section-header">Education</h2>
-
-        <div class="content">
-
-            <div class="education">
-                <p class="period">January 2017 - April 2018</p>
-                <p class="institution">Software University</p>
-                <p class="education-type">JavaScript Developer</p>
             </div>
+        </section>
 
-            <div class="education">
-                <p class="period">October 2000 - July 2004</p>
-                <p class="institution">New Bulgarian University</p>
-                <p class="education-type">Graphic Design - Bachelor</p>
+        <section id="about">
+            <h2 class="section-header">About</h2>
+
+            <div class="content">
+                <p> Hello,
+                <p/>
+                <p> My name is Lora and I‘m a graphic designer.
+                <p/>
+                <p>
+                    So far I‘ve been able to work on various projects, creating brands, visuals, prints and many more. I‘ve
+                    had the opportunity to work for world-wide companies like Fujitsu, adhering strict visual standards,
+                    while at the same time I enjoyed projects where I had freedom to create and experiment.
+                <p/>
+                <p>
+                    Willing to expand my horizon, last year I enrolled the SoftUni program for JavaScript developers, since
+                    web was something I always considered an immense field for design and creation. To my surprise, coding
+                    turned out not only to be a lot of fun, but also quite interesting and provocative. I dedicated all my
+                    time
+                    to learning new technologies and frameworks.
+                    Although I‘m still a beginner, I‘m pretty sure this is something I want to explore deeper. I found a
+                    great tool to experiment with and a huge challenge to become better at.
+                <p/>
+                <p>I‘m really interested in creating impressive, yet simple and clean design, combining good structure,
+                    consistency and usability.
+                </p>
             </div>
+        </section>
 
-            <div class="education">
-                <p class="period">September 1996 - June 2000</p>
-                <p class="institution">II English Language School</p>
-                <p class="education-type">High School</p>
+        <section id="education">
+            <h2 class="section-header">Education</h2>
+
+            <div class="content">
+
+                <div class="education">
+                    <p class="period">January 2017 - April 2018</p>
+                    <p class="institution">Software University</p>
+                    <p class="education-type">JavaScript Developer</p>
+                </div>
+
+                <div class="education">
+                    <p class="period">October 2000 - July 2004</p>
+                    <p class="institution">New Bulgarian University</p>
+                    <p class="education-type">Graphic Design - Bachelor</p>
+                </div>
+
+                <div class="education">
+                    <p class="period">September 1996 - June 2000</p>
+                    <p class="institution">II English Language School</p>
+                    <p class="education-type">High School</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <h2 class="section-header">Experience</h2>
+        <section id="experience">
+            <h2 class="section-header">Experience</h2>
 
-        <div class="content">
+            <div class="content">
 
-            <div class="experience">
-                <p class="period">October 2013 - present</p>
-                <p class="company">Freelance</p>
-                <p class="position">Graphic & Web Design</p>
+                <div class="experience">
+                    <p class="period">October 2013 - present</p>
+                    <p class="company">Freelance</p>
+                    <p class="position">Graphic & Web Design</p>
+                </div>
+
+                <div class="education">
+                    <p class="period">April 2008 - September 2013</p>
+                    <p class="company">Exzayl Ltd.</p>
+                    <p class="position">Co-founder. Graphic Designer.</p>
+                </div>
+
+                <div class="education">
+                    <p class="period">October 2004 - April 2008 </p>
+                    <p class="company">Cores Business Centres</p>
+                    <p class="position">Graphic Designer</p>
+                </div>
             </div>
+        </section>
 
-            <div class="education">
-                <p class="period">April 2008 - September 2013</p>
-                <p class="company">Exzayl Ltd.</p>
-                <p class="position">Co-founder. Graphic Designer.</p>
-            </div>
+        <section id="projects">
+            <h2 class="section-header">Projects</h2>
 
-            <div class="education">
-                <p class="period">October 2004 - April 2008 </p>
-                <p class="company">Cores Business Centres</p>
-                <p class="position">Graphic Designer</p>
-            </div>
-        </div>
-    </section>
+            <div class="content">
 
-    <section id="projects">
-        <h2 class="section-header">Projects</h2>
+                <div class="web-projects">
+                    <h3>Web Projects</h3>
 
-        <div class="content">
+                    <article class="project-card">
+                        <p class="project-name">Podredeni.eu
+                            <a href="http://podredeni.eu" target="_blank"></a>
+                            <span class="project-type"> E-commerce Application </span>
+                        </p>
 
-            <div class="web-projects">
-                <h3>Web Projects</h3>
+                        <p class="project-technologies">ReactJS, React-Bootstrap, HTML, CSS</p>
 
-                <article class="project-card">
-                    <p class="project-name">Podredeni.eu
-                        <a href="http://podredeni.eu" target="_blank"></a>
-                        <span class="project-type"> E-commerce Application </span>
-                    </p>
-
-                    <p class="project-technologies">ReactJS, React-Bootstrap, HTML, CSS</p>
-
-                    <p class="project-info"> The front-end part of this project was build with React. <br/>
-                        Administrator has full control over products, news, promotions, videos, partners and home page content. He can also edit received orders and change their status. <br/>
-                        All products can be added to promotions, which are set to be of two types - discount and product promotions. Discount promos give price discount while product promos can be of type "buy 2, get 3" or they can benefit the customer with a present (another product, selected from a list). They are validated via promo code.<br/>
-                        The site is fully responsive.
-                    </p>
-                    <a href="http://podredeni.eu" target="_blank" class="btn btn-primary xs">View
-                        <span class="btn-icon">
+                        <p class="project-info"> The front-end part of this project was build with React. <br/>
+                            Administrator has full control over products, news, promotions, videos, partners and home page content. He can also edit received orders and change their status. <br/>
+                            All products can be added to promotions, which are set to be of two types - discount and product promotions. Discount promos give price discount while product promos can be of type "buy 2, get 3" or they can benefit the customer with a present (another product, selected from a list). They are validated via promo code.<br/>
+                            The site is fully responsive.
+                        </p>
+                        <a href="http://podredeni.eu" target="_blank" rel="noreferrer" class="btn btn-primary xs">View
+                            <span class="btn-icon">
                             <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
                         </span>
-                    </a>
-                </article>
+                        </a>
+                    </article>
 
-                <article class="project-card">
-                    <p class="project-name">Polymer Concept
-                        <span class="project-type"> Web Page </span>
-                    </p>
-                    <p class="project-technologies">JavaScript, jQuery, HTML, CSS</p>
-                    <p class="project-info">Logo, web page design and implementation. The site is fully responsive.
-                    </p>
+                    <article class="project-card">
+                        <p class="project-name">Polymer Concept
+                            <span class="project-type"> Web Page </span>
+                        </p>
+                        <p class="project-technologies">JavaScript, jQuery, HTML, CSS</p>
+                        <p class="project-info">Logo, web page design and implementation. The site is fully responsive.
+                        </p>
 
-                    <a href="http://polymerconcept.bg/" target="_blank" class="btn btn-primary xs">View
-                        <span class="btn-icon">
+                        <a href="http://polymerconcept.bg/" target="_blank" rel="noreferrer" class="btn btn-primary xs">View
+                            <span class="btn-icon">
                             <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
                         </span>
-                    </a>
-                </article>
-            </div>
+                        </a>
+                    </article>
+                </div>
 
-            <div class="design-projects">
-                <h3>Graphic Design Projects</h3>
+                <div class="design-projects">
+                    <h3>Graphic Design Projects</h3>
 
-                <article class="project-card">
-                    <p class="project-name">Graphic Design Portfolio </p>
-                    <p class="project-technologies">Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
-                    <p class="project-info">A small collection of graphic design projects.
-                    </p>
-                    <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank" class="btn btn-primary xs">View
-                        <span class="btn-icon">
+                    <article class="project-card">
+                        <p class="project-name">Graphic Design Portfolio </p>
+                        <p class="project-technologies">Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+                        <p class="project-info">A small collection of graphic design projects.
+                        </p>
+                        <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank" rel="noreferrer" class="btn btn-primary xs">View
+                            <span class="btn-icon">
                             <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
                         </span>
-                    </a>
-                </article>
+                        </a>
+                    </article>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
 
 </main>
 
 </body>
 </html>
 
-<script src="scripts/main.js"></script>
+<script src="scripts/transpiled.js"></script>
