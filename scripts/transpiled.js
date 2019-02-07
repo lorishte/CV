@@ -28,7 +28,7 @@ progressBars.each(function () {
 	var el = $(this);
 
 	for (var i = 0; i <= 10; i++) {
-		el.append('<span class="scale-label graph-' + i + '">' + i * 10 + '%</span>');
+		el.append('<span class="scale-label graph-' + i + '">' + i * 10 + '</span>');
 	}
 });
 

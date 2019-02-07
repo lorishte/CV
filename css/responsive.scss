@@ -3,15 +3,32 @@
 @import "./colors.scss";
 @import "./animations.scss";
 
+@media screen and (max-width: 1250px) {
 
-@media screen and (max-width: 1000px) {
+  #info {
+    #skills {
+      .skill {
+
+        .skill-name {
+          @include flex-basis(30%);
+        }
+
+        .progress-bar {
+          @include flex-basis(70%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
 
   .section-header {
     font-size: 3em;
   }
 
   .content {
-    padding: 25px;
+    padding: 25px 0;
   }
 
   #personal-info {
@@ -24,38 +41,198 @@
       height: 170px;
     }
   }
-
 
   #info {
     @include flex-basis(70%);
   }
 }
 
-
-@media screen and (max-width: 790px) {
-
-
-  .section-header {
-    font-size: 3em;
+@media screen and (max-width: 960px) {
+  #personal-info {
+    margin-right: 25px;
   }
+}
 
-  .content {
-    padding: 25px;
+@media screen and (max-width: 768px) {
+
+  main {
+    padding: 50px 0 0 0;
   }
 
   #personal-info {
+    position: static;
+    @include flex-basis(100%);
+    padding: 25px 0;
+  }
 
-    width: 30%;
-    padding: 50px 15px;
+  #info {
+    @include flex-basis(100%);
 
-    .image-container {
-      width: 170px;
-      height: 170px;
+    & > section {
+      padding: 20px 50px;
+
+      &:nth-of-type(odd) {
+        background-color: $light-grey;
+      }
+    }
+
+    .section-header {
+      margin-top: 10px;
+    }
+
+    #projects {
+      .project-card {
+        .project-info {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #info {
+    #skills {
+      .skill {
+        @include flex-wrap(wrap);
+        padding: 10px 0;
+
+        &:hover,
+        &:active {
+
+          padding: 25px 0 35px 0;
+
+          .skill-name {
+            transform: translate(0, -7px);
+          }
+        }
+
+        .skill-name {
+          @include flex-basis(100%);
+          margin-bottom: 8px;
+        }
+
+        .progress-bar {
+          @include flex-basis(100%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #info {
+
+    #skills {
+      .skill {
+        &:hover,
+        &:active {
+          .progress-bar {
+            .scale-label {
+              &:nth-of-type(even) {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #projects {
+      .project-card {
+
+        .project-info {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .section-header {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  #about {
+
+    .content {
+      padding: 0 18px;
     }
   }
 
-
   #info {
-    @include flex-basis(70%);
+    & > section {
+      padding: 20px 25px;
+    }
+
+    #experience,
+    #education {
+
+      .education,
+      .experience {
+        margin-bottom: 10px;
+        padding: 10px 18px;
+        background-color: $light-grey;
+
+        &:last-of-type {
+          padding-bottom: inherit;
+        }
+      }
+
+      .education {
+        background-color: $white;
+      }
+
+      .period {
+        color: $primary;
+        font-size: .8em;
+      }
+
+      .company,
+      .institution {
+        font-size: 1.2em;
+      }
+      .education-type {
+        font-size: .8em;
+      }
+    }
+
+    #projects {
+      .project-card {
+        //border-bottom: none;
+        background-color: $white;
+        padding: 10px 18px 25px 18px;
+
+        .toggle-project-info {
+          display: inline-block;
+        }
+
+        .project-name {
+          font-size: 1.2em;
+        }
+
+        .project-info {
+          display: none;
+        }
+      }
+    }
   }
+}
+
+@media screen and (max-width: 360px) {
+  #about {
+
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
 }

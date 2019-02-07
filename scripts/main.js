@@ -1,6 +1,8 @@
 let menuLinks = $('.nav-link');
 let headerHeight = $('header').height();
 
+let toggleInfoBtns = $('.toggle-project-info');
+
 let progressBars = $('.progress-bar');
 let scaleInWords = {
 	0: 'zero',
@@ -26,8 +28,22 @@ progressBars.each(function () {
 	let el = $(this);
 
 	for (let i = 0; i <= 10; i++) {
-		el.append(`<span class="scale-label graph-${i}">${i * 10}%</span>`)
+		el.append(`<span class="scale-label graph-${i}">${i * 10}</span>`);
 	}
+});
+
+toggleInfoBtns.click(function () {
+	let btn = $(this);
+	let infoPanel = $(this).parent().find('.project-info');
+
+	infoPanel.toggle();
+
+	if (btn[0].innerHTML === 'info <i class="fa fa-caret-down" aria-hidden="true"></i>') {
+		btn[0].innerHTML = 'info <i class="fa fa-caret-up" aria-hidden="true"></i>';
+	} else {
+		btn[0].innerHTML = 'info <i class="fa fa-caret-down" aria-hidden="true"></i>';
+	}
+
 });
 
 //smooth scroll
@@ -44,10 +60,10 @@ $('a[href*="#"]')
 
 		$('html, body')
 			.animate({
-			'scrollTop': scrollToPosition
-		}, 1000);
+				'scrollTop': scrollToPosition
+			}, 1000);
 
-			$(document).on('scroll', changeMenuOnScroll);
+		$(document).on('scroll', changeMenuOnScroll);
 
 	});
 
