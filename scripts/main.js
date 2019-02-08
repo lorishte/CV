@@ -1,29 +1,57 @@
 let menuLinks = $('.nav-link');
+
+let mainNav = $('.nav-primary');
+
 let headerHeight = $('header').height();
+
+let projectInfoBlocks = $('.project-info');
 
 let toggleInfoBtns = $('.toggle-project-info');
 
 let progressBars = $('.progress-bar');
-let scaleInWords = {
-	0: 'zero',
-	10: 'ten',
-	20: 'twenty',
-	30: 'thirty',
-	40: 'forty',
-	50: 'fifty',
-	60: 'sixty',
-	70: 'seventy',
-	80: 'eighty',
-	90: 'ninety',
-	100: 'hundred'
-};
+
+let toggleMenuBtn = $('#toggle-menu-btn');
+
+let personalInfo = $('header .personal');
+
+let resSmall = 768;
+let resXS = 420;
+
+
 
 // Make menu active
 menuLinks.click(function () {
 	menuLinks.removeClass('active');
-	$(this).addClass('active');
+
+	let currentLink = $(this);
+	currentLink.addClass('active');
+
+	if (window.innerWidth <= resSmall) {
+		setTimeout(function () {
+			mainNav.removeClass('visible');
+			currentLink.removeClass('active');
+			toggleMenuBtn.removeClass('clicked');
+
+
+		}, 1000)
+	}
 });
 
+
+toggleMenuBtn.click(function () {
+
+	if (mainNav.hasClass('visible')) {
+		mainNav.removeClass('visible');
+		$(this).removeClass('clicked');
+		return
+	}
+	mainNav.addClass('visible');
+	$(this).addClass('clicked')
+
+});
+
+
+// Add progress bar labels
 progressBars.each(function () {
 	let el = $(this);
 
@@ -32,6 +60,7 @@ progressBars.each(function () {
 	}
 });
 
+// Show hide project info logic
 toggleInfoBtns.click(function () {
 	let btn = $(this);
 	let infoPanel = $(this).parent().find('.project-info');
@@ -63,13 +92,21 @@ $('a[href*="#"]')
 				'scrollTop': scrollToPosition
 			}, 1000);
 
-		$(document).on('scroll', changeMenuOnScroll);
-
+		if (window.innerWidth > resSmall) {
+			$(document).on('scroll', changeMenuOnScroll);
+		} else {
+			$(document).on('scroll', changeHeader);
+		}
 	});
 
-$(document).on('scroll', changeMenuOnScroll);
+$(document).on('scroll', function() {
+	changeMenuOnScroll();
+	changeHeader();
+});
+
 
 function changeMenuOnScroll () {
+
 	let scrollPos = $(document).scrollTop() + headerHeight;
 
 	// Add class 'active' to pressed menu link, remove class 'active' from current active menu link
@@ -86,6 +123,38 @@ function changeMenuOnScroll () {
 		}
 	});
 }
+
+function changeHeader () {
+	//Check if resolution is bigger
+	if (window.innerWidth <= resSmall) {
+		let wScroll = $(this).scrollTop();
+
+		if (wScroll > 300 && !personalInfo.hasClass('.clipped')) {
+			personalInfo.addClass('clipped');
+		} else {
+			personalInfo.removeClass('clipped');
+		}
+	}
+}
+
+$(window).resize(function () {
+
+	// Hide/show project info based on resolution
+	if (window.innerWidth > resXS) {
+		projectInfoBlocks.css('display', 'block');
+	} else {
+		projectInfoBlocks.css('display', 'none');
+	}
+
+	if (window.innerWidth > resSmall) {
+		personalInfo.removeClass('clipped')
+	} else {
+		changeHeader()
+	}
+});
+
+
+
 
 
 

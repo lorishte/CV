@@ -20,7 +20,25 @@
 <body>
 
 <header>
+    <a href="#personal-info">
+    <div class="personal">
+
+            <div class="image-container">
+                <img src="images/lora.jpg" alt="lora's picture"/>
+            </div>
+
+            <p class="name"> Lora Milcheva </p>
+
+    </div>
+    </a>
     <nav>
+
+        <button id="toggle-menu-btn" class="btn btn-light sm">
+            <span class="toggle"></span>
+            <span class="toggle"></span>
+            <span class="toggle"></span>
+        </button>
+
         <ul class="nav-primary">
 
             <li class="nav-item">
@@ -66,13 +84,17 @@
             <img src="images/lora.jpg" alt="lora's picture"/>
         </div>
 
-        <div>
+        <p class="name"> Lora Milcheva </p>
+
+        <div class="contacts">
+            <p class="profession">Graphic Designer. Front-end Developer.</p>
             <p> +359 887 718 788 </p>
-            <p>lora.milcheva@outlook.com</p>
+            <p><a href="mailto:lora.milcheva@outlook.com">lora.milcheva@outlook.com</a></p>
         </div>
     </aside>
 
     <div id="info">
+
         <section id="skills">
             <h2 class="section-header">Skills</h2>
 
@@ -80,10 +102,9 @@
 
                 <section id="front-end-skills">
                     <h3>Web Development</h3>
+
                     <div class="skill">
-
                         <span class="skill-name">JavaScript</span>
-
                         <div class="progress-bar">
                             <span id="js" class="progress-bar-filler"></span>
                             <span class="progress-bar-label js">good</span>
@@ -119,6 +140,15 @@
                         <div class="progress-bar">
                             <span id="css" class="progress-bar-filler"> </span>
                             <span class="progress-bar-label css">good</span>
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span class="skill-name">Sass</span>
+                        <div class="progress-bar">
+                            <span id="sass" class="progress-bar-filler"></span>
+                            <span class="progress-bar-label sass">good</span>
 
                         </div>
                     </div>
@@ -167,25 +197,10 @@
             <h2 class="section-header">About</h2>
 
             <div class="content">
-                <p> Hello,
-                <p/>
-                <p> My name is Lora and I‘m a graphic designer.
-                <p/>
-                <p>
-                    So far I‘ve been able to work on various projects, creating brands, visuals, prints and many more. I‘ve
-                    had the opportunity to work for world-wide companies like Fujitsu, adhering strict visual standards,
-                    while at the same time I enjoyed projects where I had freedom to create and experiment.
-                <p/>
-                <p>
-                    Willing to expand my horizon, last year I enrolled the SoftUni program for JavaScript developers, since
-                    web was something I always considered an immense field for design and creation. To my surprise, coding
-                    turned out not only to be a lot of fun, but also quite interesting and provocative. I dedicated all my
-                    time
-                    to learning new technologies and frameworks.
-                    Although I‘m still a beginner, I‘m pretty sure this is something I want to explore deeper. I found a
-                    great tool to experiment with and a huge challenge to become better at.
-                <p/>
-                <p>I‘m really interested in creating impressive, yet simple and clean design, combining good structure,
+                <p> Hello, <p/>
+                <p> My name is Lora and I‘m a graphic designer and a front-end developer.<p/>
+                <p> I enjoy writing my own code and custom styles when it comes to adding some interactivity and behaviour to an element or a project.<p/>
+                <p> I really appreciate impressive, yet simple and clean design, combining good structure,
                     consistency and usability.
                 </p>
             </div>
@@ -262,10 +277,14 @@
                             <i class="fa fa-caret-up" aria-hidden="true"></i>
                         </button>
 
-                        <p class="project-info"> The front-end part of this project was build with React. <br/>
-                            Administrator has full control over products, news, promotions, videos, partners and home page content. He can also edit received orders and change their status. <br/>
-                            All products can be added to promotions, which are set to be of two types - discount and product promotions. Discount promos give price discount while product promos can be of type "buy 2, get 3" or they can benefit the customer with a present (another product, selected from a list). They are validated via promo code.<br/>
-                            The site is fully responsive.
+                        <p class="project-info">A project in collaboration with a friend of mine.
+                            My job was the front-end part, which I chose to build with React, while he wrote the back-end in C#. <br/>
+                            Administrator has full control over products, news, promotions, videos, partners and home
+                            page content. He can also edit received orders and change their status. <br/>
+                            All products can be added to promotions, which are set to be of two types - discount and
+                            product promotions. Discount promos give price discount while product promos can be of type
+                            "Buy 2, Get 3" or they can benefit the customer with a present (another product, selected
+                            from a pre-defined list). They are validated via promo code.<br/>
                         </p>
                         <a href="http://podredeni.eu" target="_blank" rel="noreferrer" class="btn btn-primary xs">View
                             <span class="btn-icon">
@@ -302,13 +321,14 @@
                         <p class="project-name">Graphic Design Portfolio </p>
                         <p class="project-technologies">Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
 
-                        <button class="btn btn-light xs toggle-project-info">
+                        <button class="btn btn-default xs toggle-project-info">
                             info
                             <i class="fa fa-caret-up" aria-hidden="true"></i>
                         </button>
                         <p class="project-info">A small collection of graphic design projects.
                         </p>
-                        <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank" rel="noreferrer" class="btn btn-primary xs">View
+                        <a href="http://www.lorishte.wixsite.com/lorishte" target="_blank" rel="noreferrer"
+                           class="btn btn-primary xs">View
                             <span class="btn-icon">
                             <img src="images/arrow.svg" class="img-fit" alt="arrow"/>
                         </span>

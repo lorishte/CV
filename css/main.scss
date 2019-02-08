@@ -6,7 +6,6 @@
 @import "./colors.scss";
 @import "./animations.scss";
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,9 +19,6 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
 }
-
-
-
 
 ul {
   list-style-type: none;
@@ -64,6 +60,10 @@ button {
   border: none;
   outline: none;
   background: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
@@ -145,6 +145,11 @@ button {
     @include align-items(center);
   }
 
+  i {
+    margin-left: 4px;
+    opacity: .7;
+  }
+
   &.xs {
     padding: 3px 7px;
     font-size: .75em;
@@ -177,44 +182,6 @@ button {
   margin-top: 30px;
 }
 
-.nav-primary {
-  height: 30px;
-  padding-right: 25px;
-  @include flex;
-  @include align-items(center);
-  @include justify-content(flex-end);
-
-
-  .nav-item {
-    height: inherit;
-
-    &:hover,
-    &:active {
-      cursor: pointer;
-
-      .nav-link {
-        color: $white;
-        background-color: $primary;
-      }
-    }
-  }
-
-  .nav-link {
-    @include inline-flex;
-    @include align-items(center);
-    @include main-transition;
-    padding: 0 15px;
-    height: inherit;
-    text-transform: uppercase;
-    font-size: .7em;
-
-    &.active {
-      color: $white;
-      background-color: $primary;
-    }
-  }
-}
-
 .content {
   //background-color: $white;
   padding: 40px 0;
@@ -224,7 +191,7 @@ header {
   position: fixed;
   @include flex;
   @include align-items(flex-end);
-  @include justify-content(flex-end);
+  @include justify-content(space-between);
   height: 45px;
   top: 0;
   width: 100%;
@@ -233,6 +200,87 @@ header {
   border-bottom: 1px solid $medium-grey;
 
   z-index: 100;
+
+  .personal {
+    visibility: hidden;
+    opacity: 0;
+    @include translate(0, -100%);
+    @include flex;
+    @include align-items(center);
+    @include main-transition;
+
+    .image-container {
+      width: 30px;
+      height: 30px;
+      margin: 0 20px;
+      border-width: 2px;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    &.clipped {
+      @include translate(0, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  nav {
+
+    #toggle-menu-btn {
+      display: none;
+      background-color: $white;
+
+      .toggle {
+        display: block;
+        height: 2px;
+        width: 15px;
+        background-color: $medium-to-dark-grey;
+        margin: 3px auto;
+
+        @include main-transition;
+      }
+    }
+
+    .nav-primary {
+      height: 30px;
+      padding-right: 25px;
+      @include flex;
+      @include align-items(center);
+      @include justify-content(flex-end);
+
+      .nav-item {
+        height: inherit;
+
+        &:hover,
+        &:active {
+          cursor: pointer;
+
+          .nav-link {
+            color: $white;
+            background-color: $primary;
+          }
+        }
+      }
+
+      .nav-link {
+        @include inline-flex;
+        @include align-items(center);
+        @include main-transition;
+        padding: 0 15px;
+        height: inherit;
+        text-transform: uppercase;
+        font-size: .7em;
+
+        &.active {
+          color: $white;
+          background-color: $primary;
+        }
+      }
+    }
+  }
 }
 
 main {
@@ -255,15 +303,26 @@ main {
     width: 250px;
     height: 250px;
 
-    margin: auto;
+    margin: 0 auto 20px auto;
 
     border-radius: 50%;
     border: 10px solid $white;
 
     overflow: hidden;
   }
-}
 
+  .name {
+    font-weight: 600;
+  }
+
+  .contacts {
+    font-size: .85em;
+
+    .profession {
+      margin-bottom: 20px;
+    }
+  }
+}
 
 #info {
   @include flex-basis(60%);
@@ -334,7 +393,6 @@ main {
 
         background-color: $medium-grey;
 
-
         .scale-label {
           position: absolute;
           border-left: 1px solid $medium-grey;
@@ -349,7 +407,6 @@ main {
 
           @include main-transition;
         }
-
 
         .progress-bar-filler {
           background-color: $primary;
@@ -408,7 +465,6 @@ main {
 
   #projects {
 
-
     .project-card {
       margin: 25px 0;
       padding-bottom: 25px;
@@ -453,7 +509,6 @@ main {
         margin-bottom: 15px;
       }
 
-
       .project-info {
         font-size: .85em;
         width: 80%;
@@ -477,11 +532,3 @@ main {
   }
 
 }
-
-
-
-
-
-
-
-

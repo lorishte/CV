@@ -62,6 +62,11 @@
   animation-delay: 0s;
   width: 85%; }
 
+#sass {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 42%; }
+
 #bootstrap {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
@@ -122,6 +127,14 @@
   color: #fff;
   padding: 1px 8px; }
 
+#info #skills .skill:hover .progress-bar .progress-bar-label.sass {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 42%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
 #info #skills .skill:hover .progress-bar .progress-bar-label.bootstrap {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
@@ -167,6 +180,9 @@
   opacity: 0; }
 
 #info #skills .skill:hover .progress-bar .progress-bar-filler#css {
+  opacity: 0; }
+
+#info #skills .skill:hover .progress-bar .progress-bar-filler#sass {
   opacity: 0; }
 
 #info #skills .skill:hover .progress-bar .progress-bar-filler#bootstrap {

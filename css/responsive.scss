@@ -32,19 +32,12 @@
   }
 
   #personal-info {
-
-    width: 30%;
-    padding: 50px 15px;
-
     .image-container {
       width: 170px;
       height: 170px;
     }
   }
 
-  #info {
-    @include flex-basis(70%);
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -55,14 +48,85 @@
 
 @media screen and (max-width: 768px) {
 
+  header {
+    @include align-items(center);
+
+    nav {
+      position: relative;
+
+      #toggle-menu-btn {
+        display: block;
+
+        &.clicked {
+
+          .toggle:first-of-type {
+            transform: rotate(45deg);
+            position: relative;
+            top: 5px;
+          }
+
+          .toggle:nth-of-type(2) {
+            opacity: 0;
+          }
+
+          .toggle:last-of-type {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -5px;
+          }
+        }
+      }
+
+      .nav-primary {
+        position: absolute;
+        top: 37px;
+        right: 0;
+        width: 150px;
+        height: auto;
+        padding-right: 0;
+        background-color: $white;
+
+        -webkit-box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
+        box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
+
+        @include flex-direction(column);
+        @include translate(101%);
+        @include main-transition;
+
+        .nav-item {
+          height: 40px;
+          width: 100%;
+          border-bottom: 1px solid $medium-grey;
+
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+
+        .nav-link {
+          @include flex;
+          @include align-items(center);
+          @include justify-content(flex-start);
+        }
+
+        &.visible {
+          @include translate(0);
+        }
+      }
+    }
+  }
+
   main {
-    padding: 50px 0 0 0;
+    padding: 45px 0 0 0;
   }
 
   #personal-info {
     position: static;
     @include flex-basis(100%);
     padding: 25px 0;
+    margin-right: 0;
+    background-color: $medium-grey-bg;
   }
 
   #info {
@@ -122,6 +186,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   #info {
 
     #skills {
@@ -234,5 +299,4 @@
 }
 
 @media screen and (max-width: 320px) {
-
 }

@@ -2,8 +2,11 @@
   "name": "lora",
   "version": "1.0.0",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-cli": "^6.26.0"
+    "@babel/preset-env": "^7.3.1"
+  },
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0"
   }
 }
