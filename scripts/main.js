@@ -17,8 +17,6 @@ let personalInfo = $('header .personal');
 let resSmall = 768;
 let resXS = 420;
 
-
-
 // Make menu active
 menuLinks.click(function () {
 	menuLinks.removeClass('active');
@@ -31,25 +29,21 @@ menuLinks.click(function () {
 			mainNav.removeClass('visible');
 			currentLink.removeClass('active');
 			toggleMenuBtn.removeClass('clicked');
-
-
-		}, 1000)
+		}, 1000);
 	}
 });
-
 
 toggleMenuBtn.click(function () {
 
 	if (mainNav.hasClass('visible')) {
 		mainNav.removeClass('visible');
 		$(this).removeClass('clicked');
-		return
+		return;
 	}
 	mainNav.addClass('visible');
-	$(this).addClass('clicked')
+	$(this).addClass('clicked');
 
 });
-
 
 // Add progress bar labels
 progressBars.each(function () {
@@ -99,11 +93,10 @@ $('a[href*="#"]')
 		}
 	});
 
-$(document).on('scroll', function() {
+$(document).on('scroll', function () {
 	changeMenuOnScroll();
 	changeHeader();
 });
-
 
 function changeMenuOnScroll () {
 
@@ -147,11 +140,12 @@ $(window).resize(function () {
 	}
 
 	if (window.innerWidth > resSmall) {
-		personalInfo.removeClass('clipped')
+		personalInfo.removeClass('clipped');
 	} else {
-		changeHeader()
+		changeHeader();
 	}
 });
+
 
 
 

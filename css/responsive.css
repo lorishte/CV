@@ -108,8 +108,7 @@
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
     padding: 25px 0;
-    margin-right: 0;
-    background-color: #e6e6e6; }
+    margin-right: 0; }
 
   #info {
     -webkit-flex-basis: 100%;
@@ -120,8 +119,11 @@
         background-color: #fafafa; }
     #info .section-header {
       margin-top: 10px; }
-    #info #projects .project-card .project-info {
-      width: 100%; } }
+    #info #projects .project-card {
+      background-color: #fff;
+      padding: 25px; }
+      #info #projects .project-card .project-info {
+        width: 100%; } }
 @media screen and (max-width: 600px) {
   #info #skills .skill {
     -webkit-flex-wrap: wrap;

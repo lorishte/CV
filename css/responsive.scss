@@ -126,7 +126,6 @@
     @include flex-basis(100%);
     padding: 25px 0;
     margin-right: 0;
-    background-color: $medium-grey-bg;
   }
 
   #info {
@@ -146,6 +145,9 @@
 
     #projects {
       .project-card {
+        background-color: #fff;
+        padding: 25px;
+
         .project-info {
           width: 100%;
         }

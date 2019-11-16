@@ -91,25 +91,9 @@ button {
     }
   }
 
-  &.btn-default {
-    color: $white;
-    background-color: $default;
 
-    &:hover,
-    &:active {
-      background-color: $default-hover;
-    }
-  }
 
-  &.btn-danger {
-    color: $white;
-    background-color: $attention;
 
-    &:hover,
-    &:active {
-      background-color: $attention-hover;
-    }
-  }
 
   &.btn-light {
 
@@ -133,10 +117,6 @@ button {
       color: $medium-to-dark-grey;
       pointer-events: none;
       cursor: none;
-    }
-
-    &.active {
-      background-color: $attention;
     }
   }
 
@@ -281,6 +261,10 @@ header {
       }
     }
   }
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: $primary;
 }
 
 main {
