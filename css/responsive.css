@@ -49,13 +49,10 @@
         position: absolute;
         top: 37px;
         right: 0;
-        width: 150px;
+        width: auto;
         height: auto;
         padding-right: 0;
         background-color: #fff;
-        -webkit-box-shadow: -1px 1px 5px -2px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: -1px 1px 5px -2px rgba(0, 0, 0, 0.5);
-        box-shadow: -1px 1px 5px -2px rgba(0, 0, 0, 0.5);
         -webkit-box-direction: normal;
         -webkit-box-orient: vertical;
         -moz-box-direction: normal;
@@ -71,9 +68,10 @@
         -webkit-transition: .4s;
         -moz-transition: .4s;
         -o-transition: .4s;
-        transition: .4s; }
+        transition: .4s;
+        border: 1px solid #eaeaea; }
         header nav .nav-primary .nav-item {
-          height: 40px;
+          height: auto;
           width: 100%;
           border-bottom: 1px solid #eaeaea; }
           header nav .nav-primary .nav-item:last-of-type {
@@ -92,7 +90,9 @@
           -moz-box-pack: start;
           -ms-flex-pack: start;
           -webkit-justify-content: flex-start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+          padding: 20px 50px;
+          font-size: 1em; }
         header nav .nav-primary.visible {
           -webkit-transform: translate(0, 0);
           -moz-transform: translate(0, 0);
@@ -119,6 +119,9 @@
         background-color: #fafafa; }
     #info .section-header {
       margin-top: 10px; }
+    #info #projects .projects-category {
+      text-align: center;
+      font-size: 1.5em; }
     #info #projects .project-card {
       background-color: #fff;
       padding: 25px; }
@@ -174,7 +177,7 @@
     background-color: #fff; }
   #info #experience .period,
   #info #education .period {
-    color: #2bb9b9;
+    color: #28c97c;
     font-size: .8em; }
   #info #experience .company,
   #info #experience .institution,

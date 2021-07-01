@@ -17,7 +17,7 @@ body {
   color: $dark-grey;
 
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ul {
@@ -25,7 +25,7 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.5em;
+  line-height: 1.8em;
 }
 
 p {
@@ -305,6 +305,10 @@ main {
     .profession {
       margin-bottom: 20px;
     }
+
+    p {
+      line-height: 1.5em;
+    }
   }
 }
 
@@ -418,6 +422,14 @@ main {
     }
   }
 
+  #about {
+    .content {
+      p {
+        margin: .8em 0 .5em 0;
+      }
+    }
+  }
+
   #experience,
   #education {
 
@@ -436,6 +448,7 @@ main {
 
     .period {
       color: $medium-to-dark-grey;
+      color: $dark-grey-1;
       font-size: .8em;
     }
 
@@ -448,6 +461,10 @@ main {
   }
 
   #projects {
+
+    .projects-category{
+      font-size: 2em;
+    }
 
     .project-card {
       margin: 25px 0;

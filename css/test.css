@@ -40,86 +40,54 @@
 #js {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 60%; }
+  width: 85%; }
 
 #react {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 58%; }
+  width: 87%; }
 
 #angular {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 35%; }
+  width: 42%; }
 
 #html {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 76%; }
+  width: 86%; }
 
 #css {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 85%; }
+  width: 82%; }
 
 #sass {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 42%; }
+  width: 38%; }
 
 #bootstrap {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 53%; }
+  width: 70%; }
 
 #photoshop {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 88%; }
+  width: 93%; }
 
 #illustrator {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 73%; }
+  width: 80%; }
 
 #in-design {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 86%; }
+  width: 90%; }
 
 #info #skills .skill:hover .progress-bar .progress-bar-label.js {
-  animation: draw 1s ease-in-out;
-  animation-delay: 0s;
-  width: 60%;
-  opacity: 1;
-  color: #fff;
-  padding: 1px 8px; }
-
-#info #skills .skill:hover .progress-bar .progress-bar-label.react {
-  animation: draw 1s ease-in-out;
-  animation-delay: 0s;
-  width: 58%;
-  opacity: 1;
-  color: #fff;
-  padding: 1px 8px; }
-
-#info #skills .skill:hover .progress-bar .progress-bar-label.angular {
-  animation: draw 1s ease-in-out;
-  animation-delay: 0s;
-  width: 35%;
-  opacity: 1;
-  color: #fff;
-  padding: 1px 8px; }
-
-#info #skills .skill:hover .progress-bar .progress-bar-label.html {
-  animation: draw 1s ease-in-out;
-  animation-delay: 0s;
-  width: 76%;
-  opacity: 1;
-  color: #fff;
-  padding: 1px 8px; }
-
-#info #skills .skill:hover .progress-bar .progress-bar-label.css {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
   width: 85%;
@@ -127,7 +95,15 @@
   color: #fff;
   padding: 1px 8px; }
 
-#info #skills .skill:hover .progress-bar .progress-bar-label.sass {
+#info #skills .skill:hover .progress-bar .progress-bar-label.react {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 87%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#info #skills .skill:hover .progress-bar .progress-bar-label.angular {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
   width: 42%;
@@ -135,10 +111,34 @@
   color: #fff;
   padding: 1px 8px; }
 
+#info #skills .skill:hover .progress-bar .progress-bar-label.html {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 86%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#info #skills .skill:hover .progress-bar .progress-bar-label.css {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 82%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
+#info #skills .skill:hover .progress-bar .progress-bar-label.sass {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 38%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
 #info #skills .skill:hover .progress-bar .progress-bar-label.bootstrap {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 53%;
+  width: 70%;
   opacity: 1;
   color: #fff;
   padding: 1px 8px; }
@@ -146,7 +146,7 @@
 #info #skills .skill:hover .progress-bar .progress-bar-label.photoshop {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 88%;
+  width: 93%;
   opacity: 1;
   color: #fff;
   padding: 1px 8px; }
@@ -154,7 +154,7 @@
 #info #skills .skill:hover .progress-bar .progress-bar-label.illustrator {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 73%;
+  width: 80%;
   opacity: 1;
   color: #fff;
   padding: 1px 8px; }
@@ -162,7 +162,7 @@
 #info #skills .skill:hover .progress-bar .progress-bar-label.in-design {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
-  width: 86%;
+  width: 90%;
   opacity: 1;
   color: #fff;
   padding: 1px 8px; }

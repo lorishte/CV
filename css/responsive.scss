@@ -81,21 +81,19 @@
         position: absolute;
         top: 37px;
         right: 0;
-        width: 150px;
+        width: auto;
         height: auto;
         padding-right: 0;
         background-color: $white;
-
-        -webkit-box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
-        -moz-box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
-        box-shadow: -1px 1px 5px -2px rgba(0,0,0,0.5);
 
         @include flex-direction(column);
         @include translate(101%);
         @include main-transition;
 
+        border: 1px solid $medium-grey;
+
         .nav-item {
-          height: 40px;
+          height: auto;
           width: 100%;
           border-bottom: 1px solid $medium-grey;
 
@@ -108,6 +106,8 @@
           @include flex;
           @include align-items(center);
           @include justify-content(flex-start);
+          padding: 20px 50px;
+          font-size: 1em;
         }
 
         &.visible {
@@ -144,6 +144,10 @@
     }
 
     #projects {
+      .projects-category{
+        text-align: center;
+        font-size: 1.5em;
+      }
       .project-card {
         background-color: #fff;
         padding: 25px;

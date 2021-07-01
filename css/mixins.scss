@@ -172,14 +172,15 @@
                                    supported by Chrome and Opera */
 }
 
-@mixin gradient-two {
-  background-image: -webkit-repeating-linear-gradient(135deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .3) 3px);
-  background-image: -moz-repeating-linear-gradient(135deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .3) 3px);
-  background-image: -o-repeating-linear-gradient(135deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, .3) 3px);
-  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1) 2px, transparent 2px, transparent 2px, rgba(0, 0, 0, .1) 3px);
-  -webkit-background-size: 4px 4px;
-  -moz-background-size: 4px 4px;
-  background-size: 4px 4px;
+@mixin gradient {
+  background: rgba(174,247,168,1);
+  background: -moz-linear-gradient(-45deg, rgba(174,247,168,1) 0%, rgba(28,214,152,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(174,247,168,1)), color-stop(100%, rgba(28,214,152,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(174,247,168,1) 0%, rgba(28,214,152,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(174,247,168,1) 0%, rgba(28,214,152,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(174,247,168,1) 0%, rgba(28,214,152,1) 100%);
+  background: linear-gradient(135deg, rgba(174,247,168,1) 0%, rgba(28,214,152,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aef7a8', endColorstr='#1cd698', GradientType=1 );
 
 }
 
