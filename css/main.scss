@@ -321,6 +321,10 @@ main {
 
   #skills {
 
+    .category{
+      font-size: 2em;
+    }
+
     section {
       margin: 40px 0;
 
@@ -447,7 +451,7 @@ main {
     }
 
     .period {
-      color: $medium-to-dark-grey;
+      //color: $medium-to-dark-grey;
       color: $dark-grey-1;
       font-size: .8em;
     }
@@ -457,12 +461,13 @@ main {
       font-size: 1.4em;
       margin: 0;
       line-height: 1em;
+      font-weight: 600;
     }
   }
 
   #projects {
 
-    .projects-category{
+    .category{
       font-size: 2em;
     }
 

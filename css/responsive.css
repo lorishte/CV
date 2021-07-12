@@ -119,7 +119,9 @@
         background-color: #fafafa; }
     #info .section-header {
       margin-top: 10px; }
-    #info #projects .projects-category {
+    #info #skills .category {
+      font-size: 1.5em; }
+    #info #projects .category {
       text-align: center;
       font-size: 1.5em; }
     #info #projects .project-card {

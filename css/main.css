@@ -292,6 +292,8 @@ main {
   flex-basis: 60%; }
   #info > section {
     padding-top: 80px; }
+  #info #skills .category {
+    font-size: 2em; }
   #info #skills section {
     margin: 40px 0; }
     #info #skills section:first-of-type {
@@ -397,7 +399,6 @@ main {
       padding-bottom: 0; }
   #info #experience .period,
   #info #education .period {
-    color: #ccc;
     color: #757575;
     font-size: .8em; }
   #info #experience .company,
@@ -406,8 +407,9 @@ main {
   #info #education .institution {
     font-size: 1.4em;
     margin: 0;
-    line-height: 1em; }
-  #info #projects .projects-category {
+    line-height: 1em;
+    font-weight: 600; }
+  #info #projects .category {
     font-size: 2em; }
   #info #projects .project-card {
     margin: 25px 0;

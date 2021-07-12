@@ -17,7 +17,7 @@ let personalInfo = $('header .personal');
 let resSmall = 768;
 let resXS = 420;
 
-// Make menu active
+// Make menu link active - change color
 menuLinks.click(function () {
 	menuLinks.removeClass('active');
 
@@ -98,6 +98,8 @@ $(document).on('scroll', function () {
 	changeHeader();
 });
 
+
+// Change menu color on scroll
 function changeMenuOnScroll () {
 
 	let scrollPos = $(document).scrollTop() + headerHeight;
@@ -106,6 +108,8 @@ function changeMenuOnScroll () {
 	menuLinks.each(function () {
 		let currLink = $(this);
 		let targetedSection = $(currLink.attr('href'));
+
+
 
 		if (Math.floor(targetedSection.position().top) <= scrollPos
 			&& targetedSection.position().top + targetedSection.height() > scrollPos) {
