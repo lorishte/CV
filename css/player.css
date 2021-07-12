@@ -1,0 +1,29 @@
+#player-controls .player-scale {
+  position: relative;
+  height: 3px;
+  background-color: #eaeaea;
+  margin: 15px 0; }
+  #player-controls .player-scale .player-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: inherit;
+    background-color: #28c97c;
+    width: 0;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+#player-controls .btn {
+  height: 30px;
+  width: 30px; }
+  #player-controls .btn:hover, #player-controls .btn:active {
+    background-color: #eaeaea; }
+  #player-controls .btn img {
+    object-fit: cover;
+    height: 100%; }
+  #player-controls .btn.active {
+    background-color: #eaeaea; }
+
+/*# sourceMappingURL=player.css.map */
