@@ -286,6 +286,8 @@ main {
       margin-bottom: 20px; }
     #personal-info .contacts p {
       line-height: 1.5em; }
+    #personal-info .contacts .btn {
+      margin-top: 1em; }
 
 #info {
   -webkit-flex-basis: 60%;
