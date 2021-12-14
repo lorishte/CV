@@ -195,9 +195,7 @@
     #info #projects .project-card .toggle-project-info {
       display: inline-block; }
     #info #projects .project-card .project-name {
-      font-size: 1.2em; }
-    #info #projects .project-card .project-info {
-      display: none; } }
+      font-size: 1.2em; } }
 @media screen and (max-width: 360px) {
   #about .content {
     padding: 0; } }

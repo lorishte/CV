@@ -88,7 +88,8 @@ button {
       background-color: #28c97c;
       color: #fff; }
     .btn.btn-light:hover, .btn.btn-light:active {
-      cursor: pointer; }
+      cursor: pointer;
+      color: #0dbb68; }
     .btn.btn-light.disabled {
       color: #ccc;
       pointer-events: none;
@@ -430,13 +431,6 @@ main {
     margin: 25px 0;
     padding-bottom: 25px;
     border-bottom: 1px solid #eaeaea; }
-    #info #projects .project-card:hover .btn-icon, #info #projects .project-card:active .btn-icon {
-      width: 15px;
-      margin-left: 7px; }
-      #info #projects .project-card:hover .btn-icon .img-fit, #info #projects .project-card:active .btn-icon .img-fit {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible; }
     #info #projects .project-card .toggle-project-info {
       display: none; }
     #info #projects .project-card .project-name {
@@ -450,7 +444,7 @@ main {
       margin-left: 10px;
       top: -2px; }
     #info #projects .project-card .project-technologies {
-      color: #28c97c;
+      color: #757575;
       font-size: .85em;
       margin-bottom: 15px; }
     #info #projects .project-card .project-info {

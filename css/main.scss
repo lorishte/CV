@@ -92,6 +92,8 @@ button {
   }
 
   &.btn-link {
+    //border: 1px solid $medium-grey;
+
     &:hover {
       color: $primary;
     }
@@ -113,6 +115,7 @@ button {
     &:hover,
     &:active {
       cursor: pointer;
+      color: $primary-hover;
     }
 
     &.disabled {
@@ -344,7 +347,7 @@ main {
 
   #skills {
 
-    .category{
+    .category {
       font-size: 2em;
     }
 
@@ -490,7 +493,7 @@ main {
 
   #projects {
 
-    .category{
+    .category {
       font-size: 2em;
     }
 
@@ -499,20 +502,20 @@ main {
       padding-bottom: 25px;
       border-bottom: 1px solid $medium-grey;
 
-      &:hover,
-      &:active {
-
-        .btn-icon {
-          width: 15px;
-          margin-left: 7px;
-
-          .img-fit {
-            transform: translateX(0);
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
+      //&:hover,
+      //&:active {
+      //
+      //  .btn-icon {
+      //    width: 15px;
+      //    margin-left: 7px;
+      //
+      //    .img-fit {
+      //      transform: translateX(0);
+      //      opacity: 1;
+      //      visibility: visible;
+      //    }
+      //  }
+      //}
 
       .toggle-project-info {
         display: none;
@@ -533,7 +536,8 @@ main {
       }
 
       .project-technologies {
-        color: $primary;
+        //color: $primary;
+        color: $dark-grey-1;
         font-size: .85em;
         margin-bottom: 15px;
       }
@@ -549,6 +553,7 @@ main {
         overflow: hidden;
         @include main-transition;
         width: 1px;
+
 
         .img-fit {
           @include main-transition;
