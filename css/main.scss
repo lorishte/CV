@@ -91,9 +91,11 @@ button {
     }
   }
 
-
-
-
+  &.btn-link {
+    &:hover {
+      color: $primary;
+    }
+  }
 
   &.btn-light {
 
@@ -312,6 +314,25 @@ main {
 
     .btn {
       margin-top: 1em;
+    }
+  }
+
+  .certificates {
+    width: 60%;
+    margin: auto;
+    font-size: .8em;
+    background-color: $light-grey;
+    padding: 1.5em 1em;
+    margin-top: 2em;
+
+    h3 {
+      border-bottom: 1px solid $medium-grey;
+      margin-bottom: 1em;
+    }
+
+    a {
+      display: block;
+      margin: auto;
     }
   }
 }

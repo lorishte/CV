@@ -73,6 +73,8 @@ button {
     background-color: #28c97c; }
     .btn.btn-primary:hover, .btn.btn-primary:active {
       background-color: #0dbb68; }
+  .btn.btn-link:hover {
+    color: #28c97c; }
   .btn.btn-light {
     padding: 5px 10px;
     border: 1px solid #eaeaea;
@@ -288,6 +290,19 @@ main {
       line-height: 1.5em; }
     #personal-info .contacts .btn {
       margin-top: 1em; }
+  #personal-info .certificates {
+    width: 60%;
+    margin: auto;
+    font-size: .8em;
+    background-color: #fafafa;
+    padding: 1.5em 1em;
+    margin-top: 2em; }
+    #personal-info .certificates h3 {
+      border-bottom: 1px solid #eaeaea;
+      margin-bottom: 1em; }
+    #personal-info .certificates a {
+      display: block;
+      margin: auto; }
 
 #info {
   -webkit-flex-basis: 60%;
