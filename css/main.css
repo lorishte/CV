@@ -291,11 +291,9 @@ main {
     #personal-info .contacts .btn {
       margin-top: 1em; }
   #personal-info .certificates {
-    width: 60%;
     margin: auto;
     font-size: .8em;
-    background-color: #fafafa;
-    padding: 1.5em 1em;
+    padding: 1.5em 2em;
     margin-top: 2em; }
     #personal-info .certificates h3 {
       border-bottom: 1px solid #eaeaea;

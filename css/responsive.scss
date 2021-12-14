@@ -126,6 +126,7 @@
     @include flex-basis(100%);
     padding: 25px 0;
     margin-right: 0;
+
   }
 
   #info {
@@ -143,17 +144,18 @@
       margin-top: 10px;
     }
 
-    #skills{
-      .category{
+    #skills {
+      .category {
         font-size: 1.5em;
       }
     }
 
     #projects {
-      .category{
+      .category {
         text-align: center;
         font-size: 1.5em;
       }
+
       .project-card {
         background-color: #fff;
         padding: 25px;
@@ -274,6 +276,7 @@
       .institution {
         font-size: 1.2em;
       }
+
       .education-type {
         font-size: .8em;
       }
