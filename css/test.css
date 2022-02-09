@@ -87,6 +87,11 @@
   animation-delay: 0s;
   width: 90%; }
 
+#figma {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 68%; }
+
 #info #skills .skill:hover .progress-bar .progress-bar-label.js {
   animation: draw 1s ease-in-out;
   animation-delay: 0s;
@@ -167,6 +172,14 @@
   color: #fff;
   padding: 1px 8px; }
 
+#info #skills .skill:hover .progress-bar .progress-bar-label.figma {
+  animation: draw 1s ease-in-out;
+  animation-delay: 0s;
+  width: 68%;
+  opacity: 1;
+  color: #fff;
+  padding: 1px 8px; }
+
 #info #skills .skill:hover .progress-bar .progress-bar-filler#js {
   opacity: 0; }
 
@@ -195,6 +208,9 @@
   opacity: 0; }
 
 #info #skills .skill:hover .progress-bar .progress-bar-filler#in-design {
+  opacity: 0; }
+
+#info #skills .skill:hover .progress-bar .progress-bar-filler#figma {
   opacity: 0; }
 
 /*# sourceMappingURL=test.css.map */

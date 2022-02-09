@@ -125,7 +125,7 @@ button {
 .section-header {
   color: #28c97c;
   text-transform: uppercase;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 200;
   margin-top: 30px; }
 
@@ -309,7 +309,7 @@ main {
   #info > section {
     padding-top: 80px; }
   #info #skills .category {
-    font-size: 2em; }
+    font-size: 1.5em; }
   #info #skills section {
     margin: 40px 0; }
     #info #skills section:first-of-type {
@@ -335,15 +335,16 @@ main {
     padding: 13px 0; }
     #info #skills .skill:hover, #info #skills .skill:active {
       cursor: pointer;
-      color: #000;
-      font-weight: 600; }
+      color: #000; }
       #info #skills .skill:hover .progress-bar .scale-label, #info #skills .skill:active .progress-bar .scale-label {
         opacity: 1;
-        transform: translateY(0); }
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0); }
       #info #skills .skill:hover .progress-bar .progress-bar-filler, #info #skills .skill:active .progress-bar .progress-bar-filler {
         background-color: #28c97c; }
-      #info #skills .skill:hover .skill-name, #info #skills .skill:active .skill-name {
-        transform: translateX(20%); }
     #info #skills .skill .skill-name {
       -webkit-flex-basis: 25%;
       flex-basis: 25%;
@@ -369,7 +370,11 @@ main {
         color: #ccc;
         top: 15px;
         opacity: 0;
-        transform: translateY(20px);
+        -webkit-transform: translate(0 20px, 0);
+        -moz-transform: translate(0 20px, 0);
+        -ms-transform: translate(0 20px, 0);
+        -o-transform: translate(0 20px, 0);
+        transform: translate(0 20px, 0);
         -webkit-transition: .4s;
         -moz-transition: .4s;
         -o-transition: .4s;
@@ -421,12 +426,12 @@ main {
   #info #experience .institution,
   #info #education .company,
   #info #education .institution {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0;
     line-height: 1em;
     font-weight: 600; }
   #info #projects .category {
-    font-size: 2em; }
+    font-size: 1.5em; }
   #info #projects .project-card {
     margin: 25px 0;
     padding-bottom: 25px;
@@ -434,7 +439,7 @@ main {
     #info #projects .project-card .toggle-project-info {
       display: none; }
     #info #projects .project-card .project-name {
-      font-size: 1.4em; }
+      font-size: 1.2em; }
     #info #projects .project-card .project-type {
       position: relative;
       background-color: #eaeaea;
